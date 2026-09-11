@@ -42,6 +42,15 @@ enum L10n {
         }
     }
 
+    enum Lineups {
+        static let versus = String(localized: "vs", comment: "Separator between two teams")
+        static let captain = String(localized: "C", comment: "Single letter captain marker")
+
+        static func playerCount(_ filled: Int, _ total: Int) -> String {
+            String(localized: "\(filled)/\(total)", comment: "Filled positions out of the formation total")
+        }
+    }
+
     enum MatchDetail {
         static let lineups = String(localized: "Lineups", comment: "Segmented control tab")
         static let stats = String(localized: "Stats", comment: "Segmented control tab")

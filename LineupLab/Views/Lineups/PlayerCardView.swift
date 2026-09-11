@@ -30,7 +30,7 @@ struct PlayerCardView: View {
                         .foregroundStyle(Theme.Palette.primaryText)
                         .lineLimit(1)
                     if isCaptain {
-                        Text("C")
+                        Text(L10n.Lineups.captain)
                             .font(.system(size: 9, weight: .black))
                             .foregroundStyle(Color.black)
                             .padding(3)

@@ -87,7 +87,7 @@ final class CustomLineupStore {
         do {
             try await stack.perform { context in
                 let request = CDCustomLineup.makeFetchRequest()
-                request.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+                request.predicate = NSPredicate(format: "id == %@", id as NSUUID)
                 for object in try context.fetch(request) {
                     context.delete(object)
                 }
@@ -222,7 +222,7 @@ final class CustomLineupStore {
 
     private static func findOrCreateLineup(id: UUID, in context: NSManagedObjectContext) throws -> CDCustomLineup {
         let request = CDCustomLineup.makeFetchRequest()
-        request.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+        request.predicate = NSPredicate(format: "id == %@", id as NSUUID)
         request.fetchLimit = 1
         if let existing = try context.fetch(request).first { return existing }
         return CDCustomLineup(context: context)

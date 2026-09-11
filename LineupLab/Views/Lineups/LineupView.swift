@@ -28,7 +28,7 @@ struct LineupView: View {
         HStack(alignment: .center) {
             teamColumn(team: homeTeam, lineup: lineups.home, alignment: .leading, tint: homeColor)
             Spacer(minLength: 8)
-            Text("vs")
+            Text(L10n.Lineups.versus)
                 .font(Theme.Typography.caption)
                 .foregroundStyle(Theme.Palette.secondaryText)
             Spacer(minLength: 8)

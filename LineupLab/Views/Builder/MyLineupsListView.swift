@@ -140,7 +140,10 @@ struct SavedLineupCard: View {
                     .foregroundStyle(Theme.Palette.accent)
                 HStack(spacing: 8) {
                     Label(RatingScale.text(for: lineup.averageRating), systemImage: "star.fill")
-                    Label("\(lineup.players.count)/11", systemImage: "person.3.fill")
+                    Label(
+                        L10n.Lineups.playerCount(lineup.players.count, lineup.parsedFormation?.playerCount ?? 11),
+                        systemImage: "person.3.fill"
+                    )
                 }
                 .font(Theme.Typography.caption)
                 .foregroundStyle(Theme.Palette.secondaryText)
