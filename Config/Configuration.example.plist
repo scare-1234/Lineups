@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Copy this file to LineupLab/Resources/Configuration.plist and paste your key.
+	     Get a free key at https://dashboard.api-football.com/register
+	     LineupLab/Resources/Configuration.plist is gitignored: never commit your key. -->
+	<key>APIFootballKey</key>
+	<string>YOUR_API_KEY_HERE</string>
+	<key>APIBaseURL</key>
+	<string>https://v3.football.api-sports.io</string>
+	<key>CurrentSeason</key>
+	<integer>2026</integer>
+</dict>
+</plist>
