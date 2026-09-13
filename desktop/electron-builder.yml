@@ -1,0 +1,36 @@
+appId: com.lineuplab.desktop
+productName: LineupLab
+copyright: LineupLab
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - package.json
+  - '!**/*.map'
+
+win:
+  # x64 covers essentially every Windows PC; add arm64 here if you need it.
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+  icon: build/icon.png
+  artifactName: ${productName}-Setup-${version}.${ext}
+
+nsis:
+  # A normal installer: pick a folder, get a Desktop icon and a Start menu entry.
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: LineupLab
+  uninstallDisplayName: LineupLab
+  deleteAppDataOnUninstall: false
+
+portable:
+  artifactName: ${productName}-${version}-portable.exe

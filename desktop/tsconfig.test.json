@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM"],
+    "types": ["node", "vitest/globals"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*.test.ts", "src/shared/**/*.ts", "src/main/**/*.ts"]
+}

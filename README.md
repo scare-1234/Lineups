@@ -1,8 +1,25 @@
 # LineupLab
 
-An iOS app for browsing real club and international football matches, reading confirmed
-lineups with per-player match ratings, nationalities and ages — and building fully
-customisable dream XIs from any player in the API-Football database.
+Browse real club and international football matches, read confirmed lineups with
+per-player match ratings, nationalities and ages — and build fully customisable dream XIs
+from any player in the API-Football database.
+
+The repository holds two native apps that share the same design, data source and logic:
+
+| App | Where it lives | Platform | Build it with |
+| --- | --- | --- | --- |
+| **LineupLab for Windows** | [`desktop/`](desktop/) | Windows 10/11 desktop | Node.js — [setup guide](desktop/README.md) |
+| **LineupLab for iOS** | [`LineupLab/`](LineupLab/) | iOS 17+ | Xcode 16 (a Mac is required) |
+
+**Want an app you can click on from your desktop?** Follow
+[`desktop/README.md`](desktop/README.md) — `npm install && npm run dist:win` produces an
+installer that puts LineupLab on your desktop and in the Start menu.
+
+The rest of this file documents the iOS app.
+
+---
+
+# LineupLab for iOS
 
 - **Platform:** iOS 17.0+
 - **Tooling:** Xcode 16, SwiftUI, Swift Package Manager (no third-party dependencies)

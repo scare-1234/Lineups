@@ -2,8 +2,13 @@
 # The API key lives here and must never be committed.
 LineupLab/Resources/Configuration.plist
 
+# ---- Windows desktop app (desktop/) -------------------------------------
+desktop/node_modules/
+desktop/dist/
+desktop/release/
+
 # ---- Xcode ---------------------------------------------------------------
-build/
+/build/
 DerivedData/
 *.xcuserstate
 *.xcuserdatad/
