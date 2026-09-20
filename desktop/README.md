@@ -12,7 +12,21 @@ It installs like any other Windows program and leaves an icon on your desktop.
 
 ## 1. Build the app you can double-click
 
-You need [Node.js 20 or newer](https://nodejs.org) on a Windows PC. Then:
+### The short way
+
+On a Windows PC with [Node.js 20 or newer](https://nodejs.org) installed:
+
+1. Download this project (green **Code** button on GitHub → **Download ZIP**) and unzip it.
+2. Open the `desktop` folder.
+3. Double-click **`Install-LineupLab.cmd`**.
+
+It installs the dependencies, builds the app, and launches the installer for you. The first
+run takes a few minutes and downloads roughly 250 MB. When it finishes you have a LineupLab
+icon on your desktop.
+
+If Node.js is missing, the script says so and points you at the download.
+
+### The manual way
 
 ```powershell
 git clone https://github.com/scare-1234/Lineups.git

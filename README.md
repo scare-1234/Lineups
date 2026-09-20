@@ -11,9 +11,10 @@ The repository holds two native apps that share the same design, data source and
 | **LineupLab for Windows** | [`desktop/`](desktop/) | Windows 10/11 desktop | Node.js — [setup guide](desktop/README.md) |
 | **LineupLab for iOS** | [`LineupLab/`](LineupLab/) | iOS 17+ | Xcode 16 (a Mac is required) |
 
-**Want an app you can click on from your desktop?** Follow
-[`desktop/README.md`](desktop/README.md) — `npm install && npm run dist:win` produces an
-installer that puts LineupLab on your desktop and in the Start menu.
+**Want an app you can click on from your desktop?** On Windows, download this project,
+open the `desktop` folder and double-click **`Install-LineupLab.cmd`**. It builds LineupLab
+and runs the installer, which puts an icon on your desktop and in the Start menu.
+[Full instructions](desktop/README.md).
 
 The rest of this file documents the iOS app.
 
