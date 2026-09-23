@@ -26,6 +26,22 @@ icon on your desktop.
 
 If Node.js is missing, the script says so and points you at the download.
 
+### From PowerShell
+
+This clones the project to your Desktop and starts the build, whatever folder PowerShell
+happens to open in:
+
+```powershell
+$d = [Environment]::GetFolderPath('Desktop'); if (-not $d) { $d = $HOME }
+$dest = Join-Path $d 'Lineups'
+git clone -b claude/lineuplab-ios-app-i6y08p https://github.com/scare-1234/Lineups.git $dest
+& "$dest\desktop\Install-LineupLab.cmd"
+```
+
+Don't run these from `C:\Windows\system32` without the explicit destination above —
+Windows blocks writes there, so the clone fails with *Permission denied*. If a `Lineups`
+folder is already on your Desktop, delete it first or clone somewhere else.
+
 ### The manual way
 
 ```powershell
